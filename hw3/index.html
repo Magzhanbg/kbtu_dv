@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scatter plot </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            margin-top: 100px;
+            margin-left: 100px; 
+        }
+        button {
+            position: fixed;
+            background-color: #FF8CAE;
+            border: none;
+            color: white;
+            bottom: 360px;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px 20px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <script src="chart.js"></script>
+        <div style="display: inline-block">
+            <div id="wrapper" style="width:100%" ></div>
+                <button style="width:50%"  onclick="buildPlot()" >Generate</button>
+                <button style="width:20%" onclick="clean()">Clean</button>
+        </div>
+</body>
+</html>
+
